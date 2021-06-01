@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+
+# Css Admin
+
+--------------------------------------------------------------*/
+
+.ocdi .ocdi__response .notice-info{
+	display: none !important;
+}
+
+.ocdi__gl-item-footer--with-preview h4.ocdi__gl-item-title{
+	width: calc(100% - 156px);
+}

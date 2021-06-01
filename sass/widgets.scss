@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	max-width: 100%;
+	padding-top: 21px;
+	padding-bottom: 14px;
+	h2{
+		padding-top: 0;
+	}
+}
+
+#colophon .widget{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+.elementor-widget:not(:last-child){
+	margin-bottom: 0px !important;
+}
+
+.widget-area{
+	margin-bottom: 91px;
+	.widget{
+		width: 100%;
+		.widget-header{
+		    display: table;		
+			position: relative;
+			padding-top: 0;
+			padding-left: 4px;
+			padding-right: 21px;
+			margin-top: 35px;
+			padding-bottom: 14px;
+			font-size: 26px;
+			font-weight: 700;
+			&::before{
+			    content: "";
+			    left: 0;
+			    bottom: 0;
+			    position: absolute;
+			    border-top: 3px solid $main-color;
+			    width: 100%;
+			}
+			&::after {
+			    content: "";
+			    left: 0;
+			    bottom: 1px;		    
+			    position: absolute;
+			    border-top: 1px solid $main-color;
+			    margin-top: 1px;
+			}		
+		}
+	}		
+}
+
+.line-img .elementor-image-box-img img{
+	border-bottom: 3px solid $main-color;
+}
+
+.icon-text{
+	p{
+		padding-top: 0;
+	}
+}
+.search-form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    label{
+    	margin-top: 14px;
+    	width: auto;
+    	.search-field{
+    		width: auto;    		
+    	}
+    }
+    .search-submit{
+    	margin-top: 14px;
+    	margin-left: 8px;
+    	margin-right: 8px;
+    }
+}

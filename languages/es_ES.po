@@ -1,0 +1,1109 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2020-08-13 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-01-18 22:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Español\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.5.0; wp-5.4.4\n"
+"X-Poedit-KeywordsList: __;_e;_n;_n:1,2;_x;_x:1,2c;_ex:1,2c;esc_attr_e;"
+"esc_html__\n"
+
+#. 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s instalado y activado con éxito."
+
+#. 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s instalado correctamente."
+
+#. number of items in the mini cart.
+#: inc/woocommerce.php:459
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d articulo"
+msgstr[1] "%d articulos"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ","
+
+#: tgm/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Activar"
+
+#. %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr "Activar %2$s"
+
+#: tgm/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Activo"
+
+#: functions.php:803
+msgid "Add new Categories"
+msgstr "Añadir nueva Categoria"
+
+#: functions.php:736 functions.php:737
+msgid "Add Portfolio"
+msgstr "Agregar cartera"
+
+#: functions.php:675
+msgid ""
+"add widget here. It appears among all the articles, between the content and "
+"the comments"
+msgstr ""
+"Agregar widget aquí. Aparece entre todos los artículos, entre el contenido y "
+"los comentarios."
+
+#: functions.php:685
+msgid ""
+"Add widgets to the footer here. The location of this widget area is the "
+"bottom left"
+msgstr ""
+"Agregue widgets al pie de página aquí. La ubicación de este área de widgets "
+"es en la esquina inferior izquierda."
+
+#: functions.php:796
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr "Categorías"
+
+#: functions.php:798
+msgid "All Categories"
+msgstr "Todas las Categorías"
+
+#: tgm/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Todas las instalaciones y activaciones han sido completadas."
+
+#: tgm/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Se han completado todas las instalaciones."
+
+#. 1: dashboard link.
+#: tgm/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos los complementos instalados y activados correctamente. %1$s"
+
+#: widgets/post_type_product.php:60
+msgid "All Products"
+msgstr "Todos los Productos"
+
+#. 1: plugin name, 2: error message.
+#: tgm/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Ocurrió un error durante la instalación %1$s: <strong>%2$s</strong>."
+
+#: tgm/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "desconocido"
+
+#: tgm/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Versión disponible:"
+
+#: tgm/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Comenzar a activar el complemento"
+msgstr[1] "Comenzar a activar complementos"
+
+#: tgm/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Comience a instalar el complemento"
+msgstr[1] "Comience a instalar complementos"
+
+#: tgm/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Comenzar a actualizar el complemento"
+msgstr[1] "Comenzar a actualizar complementos"
+
+#: functions.php:683
+msgid "Bottom left widget (Footer)"
+msgstr "Widget inferior izquierdo (Footer)"
+
+#: inc/customizer.php:142 inc/customizer.php:180 inc/customizer.php:218
+#: inc/customizer.php:240 widgets/advertisement.php:199
+#: widgets/post_type_briefcase.php:101 widgets/post_type_post.php:158
+#: widgets/post_type_product.php:91
+msgid "Box Shadow"
+msgstr "Sombra de la Caja"
+
+#: inc/customizer.php:192 widgets/advertisement.php:95
+msgid "Briefcase"
+msgstr "Portafolio"
+
+#: functions.php:791 functions.php:805
+msgid "Categories"
+msgstr "Categorias"
+
+#: functions.php:799
+msgid "Categories father"
+msgstr "Categorías padre"
+
+#: functions.php:800
+msgid "Categories father:"
+msgstr "Categorías padre:"
+
+#: functions.php:792 functions.php:795 widgets/advertisement.php:157
+#: widgets/post_type_briefcase.php:67 widgets/post_type_post.php:117
+#: widgets/post_type_product.php:70
+msgid "Category"
+msgstr "Categoría"
+
+#: functions.php:814
+msgid "category-portfolio"
+msgstr "categoría-portafolio"
+
+#: functions.php:50
+msgid "Central Secondary Menu (Footer)"
+msgstr "Menú secundario central (Footer)"
+
+#: functions.php:747
+msgid "cero_post_type_Briefcase"
+msgstr "cero_post_type_Briefcase"
+
+#: inc/customizer.php:90
+msgid "Change the font of the text of the articles, buttons, text fields ..."
+msgstr ""
+"Cambia la fuente del texto de los artículos, botones, campos de texto ..."
+
+#: inc/customizer.php:53
+msgid "Change the font of the titles (H1, H2, H3 ...)"
+msgstr "Cambiar la fuente de los títulos (H1, H2, H3 ...)"
+
+#: inc/customizer.php:156 inc/customizer.php:194
+msgid "Change the style of your portfolio listing"
+msgstr "Cambie el estilo de la lista de su portafolio"
+
+#: inc/customizer.php:29
+msgid ""
+"Change the text shape by selecting any of the fonts. If you want us to add a "
+"new font, write to us at kevin@weblowcosts.com"
+msgstr ""
+"Cambie la forma del texto seleccionando cualquiera de las fuentes. Si desea "
+"que agreguemos una nueva fuente, escríbanos a kevin@weblowcosts.com"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s pensado en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensamientos sobre &ldquo;%2$s&rdquo;"
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single-briefcase_dos_lineas.php:91
+#: template-parts/content-single-sidebar.php:94
+#: template-parts/content-single.php:94
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Sigue leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/customizer.php:311
+msgid "Dark background color"
+msgstr "Color de fondo oscuro"
+
+#: widgets/title.php:33
+msgid "Decorative Title"
+msgstr "Título decorativo"
+
+#: inc/customizer.php:59 inc/customizer.php:96
+msgid "Default"
+msgstr "Por defecto"
+
+#: functions.php:1107
+msgid "Demo import"
+msgstr "Importar Demo"
+
+#: tgm/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#. Name of the theme
+msgid "dos lineas"
+msgstr "dos lineas"
+
+#: functions.php:707
+msgid "Dos Lineas (exclusive)"
+msgstr "Dos Lineas (exclusivo)"
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: functions.php:801
+msgid "Edit Categories"
+msgstr "Editar Categoría"
+
+#: functions.php:739
+msgid "Edit Portfolio"
+msgstr "Editar Portafolio "
+
+#: functions.php:1097
+msgid "Elementor Page Builder"
+msgstr "Elementor Page Builder"
+
+#: tgm/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Fuente externa"
+
+#: functions.php:734
+msgid "Father:"
+msgstr "Padre: "
+
+#: inc/customizer.php:333
+msgid "For the main color it is recommended that it be a light tone"
+msgstr "Para el color principal se recomienda que sea un tono claro."
+
+#: inc/customizer.php:343
+msgid "For the secondary color it is recommended that it be a dark tone"
+msgstr "Para el color secundario se recomienda que sea un tono oscuro."
+
+#: functions.php:989 widgets/advertisement.php:69
+#: widgets/post_type_briefcase.php:35 widgets/post_type_briefcase.php:79
+#: widgets/post_type_post.php:69 widgets/post_type_product.php:35
+msgid "General"
+msgstr "General"
+
+#: widgets/imagenn.php:225 widgets/title.php:117
+msgid "Heading Type"
+msgstr "Tipo de Encabezado"
+
+#. Description of the theme
+msgid ""
+"Hermoso tema wordpress perfecto para presentar y mostrar informaci├│n sobre "
+"tu producto o servicio por weblowcosts.com"
+msgstr ""
+"Hermoso tema de wordpress perfecto para presentar y mostrar información "
+"sobre su producto o servicio por weblowcosts.com"
+
+#: tgm/class-tgm-plugin-activation.php:3509
+#: tgm/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Ocultar detalles"
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://weblowcosts.com/"
+msgstr "http://weblowcosts.com/"
+
+#: widgets/img_and_text.php:73 widgets/img_and_text.php:89
+#: widgets/img_and_text.php:411
+msgid "Image"
+msgstr "Imagen"
+
+#: widgets/imagenn.php:137 widgets/imagenn.php:169
+msgid "Image And Text"
+msgstr "Imagen y Texto"
+
+#: widgets/imagenn.php:65
+msgid "Image And Text Inside"
+msgstr "Imagen y Texto en el Interior"
+
+#: widgets/img_and_text.php:33
+msgid "Image with Text"
+msgstr "Imagen con Texto"
+
+#: tgm/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Instalar"
+
+#. %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr "Instalar  %2$s"
+
+#: tgm/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Instalar Plugins"
+
+#: tgm/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Instalar los Plugins Necesarios"
+
+#. 1: install status, 2: update status
+#: tgm/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: tgm/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Instalado pero no activado"
+
+#: tgm/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Versión instalada:"
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalación y Activación del Complemento %1$s (%2$d/%3$d)"
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalación del Plugin %1$s (%2$d/%3$d)"
+
+#. %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalación del Plugin: %s"
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Parece que no se encontró nada en esta ubicación. Tal vez intente uno de los "
+"enlaces a continuación o una búsqueda?"
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que nosotros podemos  encuentra lo que tu&rsquo;re buscando. Quizás "
+"la búsqueda pueda ayudar."
+
+#: functions.php:1007
+msgid "Jewelry"
+msgstr "Joyas"
+
+#. %s: post title
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
+
+#: widgets/imagenn.php:441 widgets/title.php:225
+msgid "Line Color"
+msgstr "Color de Linea"
+
+#: widgets/img_and_text.php:169
+msgid "Link (URL):"
+msgstr "Enlace (URL)"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid ", "
+msgstr ","
+
+#: functions.php:748
+msgid "Look what we are able to do"
+msgstr "Mira lo que podemos hacer"
+
+#: inc/customizer.php:332
+msgid "Main Color"
+msgstr "Color principal"
+
+#: functions.php:48
+msgid "Main menu (Header)"
+msgstr "Menú principal (Header)"
+
+#: header.php:141
+msgid "Menu"
+msgstr "Menú"
+
+#: tgm/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Versión mínima requerida:"
+
+#: 404.php:34
+msgid "Most Used Categories"
+msgstr "Las Categorías más usadas"
+
+#: functions.php:804
+msgid "new name Categories"
+msgstr "Nuevo nombre de Categoria"
+
+#: functions.php:738
+msgid "New Portfolio"
+msgstr "Nuevo Portafolio"
+
+#. 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Ninguna acción tomada. El plugin %1$s ya estaba activo."
+
+#: tgm/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "No hay complementos disponibles para activarse en este momento."
+
+#: tgm/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "No hay complementos disponibles para instalar en este momento."
+
+#: tgm/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "No hay complementos disponibles para actualizar en este momento."
+
+#: tgm/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "No hay complementos para instalar, actualizar o activar."
+
+#: tgm/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"No se seleccionaron complementos para activarlos. Ninguna acción tomada."
+
+#: tgm/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "No se seleccionaron complementos para instalar. Ninguna acción tomada."
+
+#: tgm/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"No se seleccionaron complementos para actualizar. Ninguna acción tomada."
+
+#: functions.php:743 functions.php:744
+msgid "Not found"
+msgstr "Extraviado"
+
+#: tgm/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "No instalado"
+
+#: functions.php:1013
+msgid ""
+"Note: If you want to import the WooCommerce test data, you must have it done "
+"the plug-in before exporting the Demo."
+msgstr ""
+"Nota: si desea importar los datos de prueba de WooCommerce, debes activarlo "
+"antes de exportar la Demo."
+
+#: functions.php:995
+msgid ""
+"Note: if you want to import the WooCommerce test data, you must have it done "
+"the plug-in before exporting the Demo."
+msgstr ""
+"Nota: si desea importar los datos de prueba de WooCommerce, debes activarlo "
+"antes de exportar la Demo."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nada Encontrado"
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Un pensamiento en \"%1$s\""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Uy! Esa página no se puede encontrar."
+
+#: widgets/advertisement.php:93
+msgid "Page"
+msgstr "página"
+
+#: template-parts/content-page.php:24
+#: template-parts/content-single-briefcase_dos_lineas.php:113
+#: template-parts/content-single-sidebar.php:116
+#: template-parts/content-single.php:116
+msgid "Pages:"
+msgstr "Paginas:"
+
+#: functions.php:999
+msgid "Photography"
+msgstr "Fotografía"
+
+#: tgm/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Comuníquese con el administrador de este sitio para obtener ayuda."
+
+#: tgm/class-tgm-plugin-activation.php:934
+#: tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Póngase en contacto con el proveedor del complemento y pídale que empaque su "
+"complemento de acuerdo con las pautas de WordPress."
+
+#: tgm/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Plugin"
+
+#: tgm/class-tgm-plugin-activation.php:1121
+#: tgm/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "y"
+
+#: tgm/class-tgm-plugin-activation.php:387
+#: tgm/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Plugin activado correctamente."
+
+#: tgm/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Falló la activación del Plugin."
+
+#. 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Complemento no activado. Se necesita una versión superior de %s para este "
+"tema. Actualice el complemento."
+
+#. 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Todo <span class=\"count\">(%s)</span>"
+msgstr[1] "Todos <span class=\"count\">(%s)</span>"
+
+#: functions.php:730 functions.php:731 functions.php:732 functions.php:733
+#: functions.php:735
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: functions.php:784
+msgid "portfolio"
+msgstr "portafolio"
+
+#: widgets/post_type_briefcase.php:17
+msgid "Portfolio Listing"
+msgstr "Listado de Portafolio"
+
+#: widgets/advertisement.php:91
+msgid "Post"
+msgstr "Enviar"
+
+#. %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "por %s"
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publicado en %s"
+
+#: widgets/post_type_post.php:33
+msgid "Post Listing"
+msgstr "Listado de Entradas"
+
+#: inc/customizer.php:154
+msgctxt "Post of Custom Post Type"
+msgid "Post"
+msgstr "Entradas"
+
+#: widgets/advertisement.php:85
+msgid "Post Type"
+msgstr "Tipo de publicación"
+
+#. 1: list of categories.
+#: inc/template-tags.php:65
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publicado en %1$s"
+
+#: widgets/advertisement.php:33
+msgid "Posts Widget"
+msgstr "Widget de publicaciones"
+
+#: footer.php:62
+msgid "Powered by"
+msgstr "Núcleo del código de"
+
+#: tgm/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Preenvasado"
+
+#: widgets/advertisement.php:97
+msgid "Product"
+msgstr "Producto"
+
+#: widgets/post_type_product.php:17
+msgid "Product Listing"
+msgstr "Listado de Productos"
+
+#: functions.php:794
+msgid "Project Categories"
+msgstr "Categorías de proyectos"
+
+#: widgets/advertisement.php:117 widgets/post_type_briefcase.php:43
+#: widgets/post_type_post.php:85 widgets/post_type_product.php:43
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: template-parts/post/content-list-style-horizontal.php:131
+#: template-parts/post/content-list-style-vertical.php:131
+msgid "Read now"
+msgstr "Leer ahora"
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Listo para publicar su primer post? <a href=\"%1$s\"> Comience aquí </a>."
+
+#: tgm/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: tgm/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Necesario"
+
+#: tgm/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Actualización Requerida no Disponible"
+
+#: tgm/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Requiere Actualización"
+
+#: functions.php:1018
+msgid "Restaurant"
+msgstr "Restaurante "
+
+#: tgm/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Volver al Instalador de Complementos Necesarios"
+
+#: tgm/class-tgm-plugin-activation.php:386
+#: tgm/class-tgm-plugin-activation.php:827
+#: tgm/class-tgm-plugin-activation.php:2533
+#: tgm/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Regreso al Panel de Control"
+
+#: functions.php:52
+msgid "Right secondary menu (Footer)"
+msgstr "Menú secundario derecho (Footer)"
+
+#: functions.php:797
+msgid "Search of por Categories"
+msgstr "Búsqueda por Categorías"
+
+#: functions.php:742
+msgid "Search of Portfolio"
+msgstr "Búsqueda de Cartera"
+
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados de búsqueda para: %s"
+
+#: inc/customizer.php:342
+msgid "Segundary color"
+msgstr "Color secundario"
+
+#: inc/customizer.php:370 inc/customizer.php:386
+msgid "Select Style"
+msgstr "Seleccionar Estilo"
+
+#: widgets/advertisement.php:181 widgets/post_type_post.php:136
+#: widgets/post_type_product.php:82
+msgid "Shadow"
+msgstr "Sombra "
+
+#: tgm/class-tgm-plugin-activation.php:3509
+#: tgm/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Mostrar Detalles"
+
+#: functions.php:673
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: tgm/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Algo salió mal con la API del plugin."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo sentimos, pero nada coincide con sus términos de búsqueda. Intente "
+"nuevamente con algunas palabras diferentes."
+
+#: tgm/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Fuente"
+
+#: tgm/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Estado"
+
+#: widgets/post_type_briefcase.php:87 widgets/post_type_post.php:144
+#| msgid "Type"
+msgid "Style"
+msgstr "Estilo"
+
+#: inc/customizer.php:376 widgets/post_type_post.php:148
+msgid "Style Horizontal"
+msgstr "Estilo Horizontal"
+
+#: inc/customizer.php:393 widgets/post_type_briefcase.php:92
+msgid "Style Line"
+msgstr "Línea de Estilo"
+
+#: inc/customizer.php:392 widgets/post_type_briefcase.php:91
+msgid "Style Simple"
+msgstr "Estilo Simple"
+
+#: inc/customizer.php:377 widgets/post_type_post.php:149
+msgid "Style Vertical"
+msgstr "Estilo Vertical"
+
+#: inc/customizer.php:293
+msgid "Switch to dark mode"
+msgstr "Cambiar al modo oscuro"
+
+#. 1: list of tags.
+#: inc/template-tags.php:72
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Etiquetado %1$s"
+
+#: inc/customizer.php:89 widgets/img_and_text.php:125
+#: widgets/img_and_text.php:141 widgets/img_and_text.php:239
+msgid "Text"
+msgstr "Texto"
+
+#: widgets/img_and_text.php:273
+msgid "Text Color"
+msgstr "Color del texto"
+
+#: inc/customizer.php:352
+msgid "Text color"
+msgstr "Color de texto"
+
+#: widgets/img_and_text.php:191
+msgid "Text container (HTML)"
+msgstr "Contenedor de texto (HTML)"
+
+#: widgets/img_and_text.php:321
+msgid "Text Shadow"
+msgstr "Sombra de texto"
+
+#. %s: version number
+#: tgm/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/customizer.php:312
+msgid "The colors that can be selected are based on the secondary color."
+msgstr ""
+"Los colores que se pueden seleccionar están basados en el color segundario."
+
+#: tgm/class-tgm-plugin-activation.php:346
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"El siguiente complemento debe actualizarse a su última versión para "
+"garantizar la máxima compatibilidad con este tema: %1$s."
+msgstr[1] ""
+"Los siguientes complementos deben actualizarse a su última versión para "
+"garantizar la máxima compatibilidad con este tema: %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:388
+#: tgm/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr "El siguiente complemento se activó con éxito:"
+
+#: tgm/class-tgm-plugin-activation.php:364
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+"El siguiente complemento recomendado está actualmente inactivo: %1$s."
+msgstr[1] ""
+"Los siguientes complementos recomendados están actualmente inactivos: %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+"El siguiente complemento obligatorio está inactivo actualmente: %1$s."
+msgstr[1] ""
+"Los siguientes complementos obligatorios están actualmente inactivos: %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Se inicia el proceso de instalación y activación. Este proceso puede tardar "
+"un poco en algunos hosts, así que tenga paciencia."
+
+#. 1: plugin name.
+#: tgm/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Error en la instalación de %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Se inicia el proceso de instalación. Este proceso puede tardar un poco en "
+"algunos hosts, así que tenga paciencia."
+
+#: tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"El paquete del complemento remoto consta de más de un archivo, pero los "
+"archivos no están empaquetados en una carpeta."
+
+#: tgm/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"El paquete del complemento remoto no contiene una carpeta con el slug "
+"deseado y el cambio de nombre no funcionó."
+
+#: footer.php:56
+msgid "Theme developed by Web Low Costs"
+msgstr "Tema desarrollado por Web Low Cost"
+
+#: tgm/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Hay uno o más complementos requeridos o recomendados para instalar, "
+"actualizar o activar."
+
+#: tgm/class-tgm-plugin-activation.php:352
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Hay una actualización disponible para: %1$s."
+msgstr[1] "Hay actualizaciones disponibles para los siguientes plugins: %1$s."
+
+#: widgets/imagenn.php:177 widgets/title.php:93
+msgid "This is the heading"
+msgstr "Este es el encabezado"
+
+#: widgets/img_and_text.php:145
+msgid "This is the text"
+msgstr "Este es el texto"
+
+#: tgm/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Este complemento debe actualizarse para que sea compatible con su tema."
+
+#: tgm/class-tgm-plugin-activation.php:340
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Este tema recomienda el siguiente plugin: %1$s."
+msgstr[1] "Este tema recomienda los siguientes plugins: %1$s."
+
+#: tgm/class-tgm-plugin-activation.php:334
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Este tema requiere el siguiente plugin: %1$s."
+msgstr[1] "Este tema requiere los siguientes plugins: %1$s."
+
+#: inc/customizer.php:52 widgets/imagenn.php:309 widgets/title.php:73
+#: widgets/title.php:89 widgets/title.php:159
+msgid "Title"
+msgstr ""
+"T\n"
+"ítulo"
+
+#: widgets/imagenn.php:377 widgets/title.php:193
+msgid "Title Color"
+msgstr "Color del título"
+
+#: inc/customizer.php:125
+msgctxt "title of a custom section"
+msgid "Header"
+msgstr "Encabezamiento"
+
+#. 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Activar <span class=\"count\">(%s)</span>"
+msgstr[1] "Activar <span class=\"count\">(%s)</span>"
+
+#. 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Instalar <span class=\"count\">(%s)</span>"
+msgstr[1] "Instalar <span class=\"count\">(%s)</span>"
+
+#. %1$s: smiley
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Trate de buscar en los archivos mensuales. %1$s"
+
+#: tgm/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Tipo"
+
+#: inc/customizer.php:26
+msgid "Typography"
+msgstr "Tipografía"
+
+#: functions.php:815
+msgid "Uncategorized"
+msgstr "Indefinido"
+
+#: tgm/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Actualizar"
+
+#. %2$s: plugin name in screen reader markup
+#: tgm/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr "Actualizar %2$s"
+
+#. 1: number of plugins.
+#: tgm/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Actualización Disponible <span class=\"count\">(%s)</span>"
+msgstr[1] "Actualizaciones Disponibles <span class=\"count\">(%s)</span>"
+
+#: functions.php:802
+msgid "Update Categories"
+msgstr "Actualizar Categoría"
+
+#: functions.php:740
+msgid "Update Portfolio"
+msgstr "Actualizar Portafolio "
+
+#: tgm/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Actualizacion recomendada"
+
+#: tgm/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Actualización Requerida"
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: tgm/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Actualización Plugin  %1$s (%2$d/%3$d)"
+
+#. %s: plugin name.
+#: tgm/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Actualización Plugin : %s"
+
+#: tgm/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Actualizar mensaje del autor del plugin:"
+
+#: tgm/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Versión"
+
+#: functions.php:741
+msgid "View Portfolio"
+msgstr "Ver Portafolio "
+
+#: inc/woocommerce.php:451
+msgid "View your shopping cart"
+msgstr "Ver su carrito de compras"
+
+#. Author of the theme
+msgid "Web Low Costs"
+msgstr "Web Low Costs"
+
+#: inc/customizer.php:294
+msgid ""
+"When activating this mode the background and the gray tones have a dark tone."
+" Also the text will change to white. (This does not affect objects added "
+"with Elementor)"
+msgstr ""
+"Al activar este modo el fondo y los tonos grises tengas una tonalidad oscura."
+" También el texto cambiara a blanco. (Esto no afecta a los objetos agregados "
+"con Elementor) "
+
+#. Name of the template
+msgid "With sidebar"
+msgstr "Con barra lateral"
+
+#: tgm/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Repositorio de WordPress"
+
+#: widgets/img_and_text.php:149
+msgid "Your text"
+msgstr "Tu texto"
+
+#: widgets/imagenn.php:185 widgets/title.php:97
+msgid "Your title"
+msgstr "Tu título"

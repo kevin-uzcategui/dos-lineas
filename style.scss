@@ -1,0 +1,64 @@
+/*
+Theme Name: dos lineas
+Theme URI: http://weblowcosts.com/
+Author: Web Low Costs
+Author URI: http://weblowcosts.com/
+Description: Hermoso tema wordpress perfecto para presentar y mostrar información sobre tu producto o servicio por weblowcosts.com
+Version: 1.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dos-lineas
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Modifications to bootstrap
+# Forms and Button
+	## Button
+	## Forms
+# Navigation
+	## logged	
+	## Links
+	## Menus
+	## Footer
+# Accessibility
+# Clearings
+# Widgets
+# Content
+	## Posts
+	## Pages
+	## Portfolio
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Position
+# Recycling 
+# Woocommerce
+--------------------------------------------------------------*/
+
+
+// impoart
+@import 'sass/variables.scss';
+@import 'sass/normalize.scss';
+@import 'sass/typography.scss';
+@import 'sass/elements.scss';
+@import 'sass/compatibility.scss';
+@import 'sass/modifications to bootstrap.scss';
+@import 'sass/forms.scss';
+@import 'sass/navigation.scss';
+@import 'sass/accessibility.scss';
+@import 'sass/clearings.scss';
+@import 'sass/widgets.scss';
+@import 'sass/content.scss';
+@import 'sass/infinite scroll.scss';
+@import 'sass/media.scss';
+@import 'sass/position.scss';
+@import 'sass/recycling.scss';
+@import 'sass/woocommerce.scss';

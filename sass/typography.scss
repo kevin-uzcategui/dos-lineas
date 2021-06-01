@@ -1,0 +1,208 @@
+ /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $secondary-color;
+	font-family: $base-font;
+	font-weight: 400;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+// h1, h2, h3, h4, h5, h6, legend{
+// 	clear: both;
+// 	font-family: $heading-font;
+// 	padding-top: 35px;
+// 	margin-bottom: 0;
+// 	line-height: 1.15;
+// 	&.mini-header{
+// 		font-size: 26px;
+// 		font-weight: 400;
+// 	}
+// 	&.page-title{
+// 		padding-top: 35px;
+// 	}
+	
+// 	&.titlewidget{
+// 		margin-left: auto;
+// 		margin-right: auto;		
+// 		display: table;
+// 		position: relative;
+// 		padding-bottom: 30px;
+// 		padding-top: 0;
+// 		text-align: center;
+// 		&::before{
+// 			content: "";
+// 			right: -5%;
+// 			position: absolute;
+// 			border-top: 3px solid #0099F2;
+// 			bottom: 15px;
+// 			width: 110%;
+// 		}
+// 		&::after{
+// 			content: "";    
+//     		left: 15%;
+// 		    position: absolute;
+// 		    border-top: 1px solid $main-color;
+//    	 		bottom: 5px;
+// 			width: 70%;
+// 		}
+// 	}
+	
+
+// }
+
+// body:not(.elementor-page) h1.titlewidget{
+// 	padding-top: 35px;
+// }
+
+h1, h2, h3, h4, h5, h6, legend{
+	clear: both;
+	font-family: $heading-font;
+	padding-top: 35px;
+	margin-bottom: 0;
+	line-height: 1.15;
+	&.mini-header{
+		font-size: 26px;
+		font-weight: 400;
+	}
+	&.page-title{
+		padding-top: 35px;
+	}
+	
+	&.titlewidget{
+		margin-left: auto;
+		margin-right: auto;		
+		display: table;
+		position: relative;
+		padding-bottom: 30px;
+		padding-top: 0;
+		text-align: center;
+		&::before{
+			content: "";
+			right: -5%;
+			position: absolute;
+			border-top: 3px solid #0099F2;
+			bottom: 15px;
+			width: 110%;
+		}
+		&::after{
+			content: "";    
+    		left: 15%;
+		    position: absolute;
+		    border-top: 1px solid $main-color;
+   	 		bottom: 5px;
+			width: 70%;
+		}
+	}
+	
+
+}
+
+body:not(.elementor-page) h1.titlewidget{
+	padding-top: 35px;
+}
+
+
+
+
+
+h1{
+	font-size: 68px;
+	font-weight: 400;
+}
+
+h2{
+	font-size: 42px;
+	font-weight: 700;
+}
+
+h3, legend{
+	font-size: 42px;
+	font-weight: 400;
+}
+
+h4{
+	font-size: 26px;
+	font-weight: 700;
+}
+
+h5, h6{
+	font-size: 26px;
+	font-weight: 400;
+}
+
+
+
+p {
+	padding-top: 16px;
+	margin-bottom: 0;
+}
+
+figcaption{
+	text-align: center;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+
+@media screen and (max-width: 768px ) {
+	h1, h2, h3, h4, h5, h6 {
+		&.titlewidget{
+			&::before{
+			    left: 15px;
+			    width: 90%;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Compatibility
+--------------------------------------------------------------*/
+
+/*Elementor*/
+h1, h2, h3, h4, h5, h6{
+	&.elementor-icon-box-title{
+		padding-top: 0px;
+	}
+}
+
+.page-template-elementor_canvas{
+	margin-top: 0 !important;
+}
+
+.text-img-inside{
+    padding-top: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*Contact Forms*/
+
+.wpcf7{
+	label, .wpcf7-checkbox, input, .wpcf7-radio, select{
+		width: 100%;
+		
+	}
+	.wpcf7-radio, .wpcf7-checkbox, select{
+		display: block;
+	}
+
+}
+
+
+
+

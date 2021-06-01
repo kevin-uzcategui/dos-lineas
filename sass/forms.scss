@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+# Forms and Button
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Button
+--------------------------------------------------------------*/
+
+
+
+label{
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;	
+}
+
+input[type="checkbox"]{
+	width: auto;
+}
+
+#commentform input{
+	width: 100%;
+}
+
+.comment-form-cookies-consent{
+	#wp-comment-cookies-consent{
+		display: inline;
+		width: auto;
+	}
+	label{
+		display: inline;
+	}
+}
+
+button,
+button.button-forms,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	border: none;
+	background: $main-color;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	padding: 14px 36px;
+	transition: 0.3s;
+	&:active, :focus{
+		border-color: #DDDEDF;
+		cursor:pointer;
+	}
+	&:hover{
+		background: rgba(0, 153, 242, 0.9);
+	}
+}
+
+.elementor-widget-id_button button.button-border{
+	border: 1px solid $main-color;
+	background: transparent;
+	color: $main-color;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	padding: 14px 36px;
+	transition: 0.3s;
+	&:active, :focus{
+		border-color: #DDDEDF;
+		cursor:pointer;
+	}
+}
+
+.elementor-widget-id_button .button-animation-1,
+input[type="submit"].wpcf7-submit,
+input[type="submit"].search-submit,
+input[type="submit"].submit,
+button.button{
+	background: rgb(0, 23, 36);
+	cursor: pointer;
+	border: none;
+	font-size: 16px;
+	padding: 14px 36px;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1;
+	text-decoration: none;
+	border:none;
+	box-shadow: 0px 0px 0px 1px $main-color;
+	-webkit-transition: box-shadow 0.2s linear;
+	transition: box-shadow 0.2s linear;
+	&:hover {
+		box-shadow: 0px 0px 0px 3px $main-color;
+	}
+}
+
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea{
+	color: $secondary-color;
+	width: 100%;
+    border-top: 1px solid #DDDEDF;
+    border-left: 1px solid #DDDEDF;
+    border-right: 1px solid #DDDEDF;
+    border-bottom: 3px solid #666;
+	animation: all 0.6s ease;
+	background: transparent;
+	padding: 10px 10px;
+}
+
+input[type="text"]:placeholder,
+input[type="email"]:placeholder,
+input[type="url"]:placeholder,
+input[type="password"]:placeholder,
+input[type="search"]:placeholder,
+input[type="number"]:placeholder,
+input[type="tel"]:placeholder,
+input[type="range"]:placeholder,
+input[type="date"]:placeholder,
+input[type="month"]:placeholder,
+input[type="week"]:placeholder,
+input[type="time"]:placeholder,
+input[type="datetime"]:placeholder,
+input[type="datetime-local"]:placeholder,
+input[type="color"]:placeholder,
+textarea:placeholder,
+select:placeholde {
+	color: #666;	
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+	background: #F7F7F7;
+	color: $secondary-color;
+}
+
+.button-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+textarea {
+	width: 100%;
+}

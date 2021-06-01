@@ -1,0 +1,16 @@
+//Variables
+
+$base-font: 'Raleway', serif;
+$heading-font: 'Zilla Slab', serif;
+$main-color: #0099F2;
+$secondary-color: #001724;
+$base-duration: 0.6s;
+
+
+// Enter a base pixel size in px (without the px)
+$basepx: 16;
+
+// Convert PX to EM global function
+@function pxtoem($px, $basepx){
+    @return ($px/$basepx)+0em;
+}
