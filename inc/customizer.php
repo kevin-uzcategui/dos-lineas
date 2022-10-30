@@ -60,7 +60,6 @@ function dos_lineas_customize_register( $wp_customize ) {
 			'Raleway' => 'Raleway',
 			'Zilla Slab' => 'Zilla Slab',
 			'Lato' => 'Lato',
-			'Helvetica' => 'Helvetica',
 			'Roboto' => 'Roboto',
 			'Roboto Condensed' => 'Roboto Condensed',
 			'Roboto Mono' => 'Roboto Mono',
@@ -77,7 +76,7 @@ function dos_lineas_customize_register( $wp_customize ) {
 			'Open Sans' => 'Open Sans',
 			'Open Sans Condensed' => 'Open Sans Condensed',
 			'Source Sans Pro' => 'Source Sans Pro',
-			'Gentium Basic' => 'Gentium Basic',
+			'Gentium Book Basic' => 'Gentium Book Basic',
 	    )
 	)
 	) );
@@ -97,7 +96,6 @@ function dos_lineas_customize_register( $wp_customize ) {
 			'Raleway' => 'Raleway',
 			'Zilla Slab' => 'Zilla Slab',
 			'Lato' => 'Lato',
-			'Helvetica' => 'Helvetica',
 			'Roboto' => 'Roboto',
 			'Roboto Condensed' => 'Roboto Condensed',
 			'Roboto Mono' => 'Roboto Mono',
@@ -114,7 +112,7 @@ function dos_lineas_customize_register( $wp_customize ) {
 			'Open Sans' => 'Open Sans',
 			'Open Sans Condensed' => 'Open Sans Condensed',
 			'Source Sans Pro' => 'Source Sans Pro',
-			'Gentium Basic' => 'Gentium Basic',
+			'Gentium Book Basic' => 'Gentium Book Basic',
 	    )
 	)
 	) );

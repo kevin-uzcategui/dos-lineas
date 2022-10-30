@@ -99,20 +99,50 @@ if ( ! function_exists( 'dos_lineas_setup' ) ) :
 		function theme_get_customizer_css() {
 			ob_start();
 
+			$main_font = get_theme_mod( 'main_font', '' );
+			$main_font = !empty($main_font) ? $main_font : 'Raleway';	
+			$archive_main_font = str_replace(' ', '', $main_font);
+			$css_main_font = "\"$main_font\", sans-serif";
+
 			$segundary_font = get_theme_mod( 'segundary_font', '' );
 			$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
+			$archive_segundary_font = str_replace(' ', '', $segundary_font);
 			$css_segundary_font = "\"$segundary_font\", sans-serif";
 
+			if($segundary_font === $main_font):
+
 			?>
+			@font-face {
+				font-family: <?php echo $main_font ?>;
+				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf'), 
+				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf');
+			}
+			<?php
+			
+			else:
+
+			?>
+			@font-face {
+				font-family: <?php echo $main_font ?>;
+				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf') format('truetype'), 
+				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf') format('truetype');
+			}
+			
+			@font-face {
+				font-family: <?php echo $segundary_font ?>;
+				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Regular.ttf') format('truetype'), 
+				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Bold.ttf') format('truetype');
+			}			
+			<?php
+
+			endif;
+			?>
+
+
 			h1, h2, h3, h4, h5, h6{
 				font-family: <?php echo $css_segundary_font; ?>;
 			}
-			<?php
-			$main_font = get_theme_mod( 'main_font', '' );
-			$main_font = !empty($main_font) ? $main_font : 'Raleway';			
-			$css_main_font = "\"$main_font\", sans-serif";
 
-			?>
 			body, button, input, select, optgroup, textarea{
 				font-family: <?php echo $css_main_font; ?>;
 			}
@@ -960,20 +990,6 @@ function dos_lineas_scripts() {
 	    wp_add_inline_style( 'line-main-styles', $custom_css );
     // }
 
-	$main_font = get_theme_mod( 'main_font', '' );
-	$main_font = !empty($main_font) ? $main_font : 'Raleway';
-	$segundary_font = get_theme_mod( 'segundary_font', '' );
-	$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
-
-	$url_main_font = urlencode($main_font);
-	$url_segundary_font = urlencode($segundary_font);
-
-
-	if($segundary_font === $main_font){
-		wp_enqueue_style('line-google-fonts', "//fonts.googleapis.com/css?family=$url_main_font:400,700&display=swap");
-	}else{
-		wp_enqueue_style('line-google-fonts', "//fonts.googleapis.com/css?family=$url_main_font:400,700|$segundary_font:400,700&display=swap");
-	}
 	wp_enqueue_style( 'bootstrap_css', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
   					array(), 
