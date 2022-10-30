@@ -66,14 +66,17 @@
 		</span>
 	</footer>
 	<div id="bottom-content"></div>
+
 </div>
 
-<?php wp_footer(); ?>
 <style type="text/css">
 	body{
 		overflow-y: visible;	
 	}
 
 </style>
+
+<?php wp_footer(); ?>
+
 </body>
 </html>
