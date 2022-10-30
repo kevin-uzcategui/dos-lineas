@@ -1018,6 +1018,9 @@ function dos_lineas_scripts_remove() {
 
 	$is_change_regenerator_runtime = false;
 
+	write_log('$wp_scripts->queue');
+	write_log($wp_scripts->queue);
+
 	if(in_array('regenerator-runtime', $wp_scripts->queue)){
 		wp_dequeue_script( 'regenerator-runtime' );
 
@@ -1025,7 +1028,7 @@ function dos_lineas_scripts_remove() {
 	}
 
 }
-add_action( 'wp_print_scripts', 'dos_lineas_scripts_remove' );
+add_action( 'wp_print_scripts', 'dos_lineas_scripts_remove', 99999 );
 
 function dos_lineas_style_in_footer() {
     global $wp_scripts, $is_change_regenerator_runtime;
