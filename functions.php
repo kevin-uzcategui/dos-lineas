@@ -1022,16 +1022,19 @@ function dos_lineas_scripts_remove() {
 	write_log($wp_scripts->queue);
 
 	if(!empty($wp_scripts->registered['regenerator-runtime'])){
-		wp_dequeue_script( 'regenerator-runtime' );
 
-		$is_change_regenerator_runtime['is_change']  = true;
+		$change_regenerator_runtime['version']  = $wp_scripts->registered['regenerator-runtime']->ver;
+
+		unset($wp_scripts->registered['regenerator-runtime']);
+
+		$change_regenerator_runtime['is_change']  = true;
 	}
 
 }
 add_action( 'wp_print_scripts', 'dos_lineas_scripts_remove', 99999 );
 
 function dos_lineas_style_in_footer() {
-    global $wp_scripts, $change_regenerator_runtime;
+    global $change_regenerator_runtime;
 
 	wp_enqueue_style( 'bootstrap_css', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
@@ -1039,7 +1042,7 @@ function dos_lineas_style_in_footer() {
   					'4.4.1'); 
 
 	if($change_regenerator_runtime['is_change']){
-		echo '"<script type="text/javascript" async src="' . get_site_url() . '/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver="' . $wp_scripts->registered['regenerator-runtime']->ver . ' id="regenerator-runtime-js"></script>"';
+		echo '"<script type="text/javascript" async src="' . get_site_url() . '/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver="' . $change_regenerator_runtime['version'] . ' id="regenerator-runtime-js"></script>"';
 
 	}
 						
