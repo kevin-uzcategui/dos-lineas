@@ -100,24 +100,23 @@ if ( ! function_exists( 'dos_lineas_setup' ) ) :
 			ob_start();
 
 			$segundary_font = get_theme_mod( 'segundary_font', '' );
+			$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
+			$css_segundary_font = "\"$segundary_font\", sans-serif";
 
-			if ( ! empty( $segundary_font ) ) {
-				?>
-				h1, h2, h3, h4, h5, h6{
-					font-family: <?php echo $segundary_font; ?>;
-				}
-				<?php
+			?>
+			h1, h2, h3, h4, h5, h6{
+				font-family: <?php echo $css_segundary_font; ?>;
 			}
-
+			<?php
 			$main_font = get_theme_mod( 'main_font', '' );
+			$main_font = !empty($main_font) ? $main_font : 'Raleway';			
+			$css_main_font = "\"$main_font\", sans-serif";
 
-			if ( ! empty( $main_font ) ) {
-				?>
-				body, button, input, select, optgroup, textarea{
-					font-family: <?php echo $main_font; ?>;
-				}
-				<?php
+			?>
+			body, button, input, select, optgroup, textarea{
+				font-family: <?php echo $css_main_font; ?>;
 			}
+			<?php
 
 			$main_color = get_theme_mod( 'main_color', '' );
 
@@ -847,8 +846,7 @@ if ( ! function_exists('dos_lineas_create_cpt_portfolio') ) {
 
 	if (
 
-		!file_exists(dirname(__FILE__, 3) . '/languages/plugins/
-			pt-ocdi-es_CL.mo') or
+		!file_exists(dirname(__FILE__, 3) . '/languages/plugins/pt-ocdi-es_CL.mo') or
 		!file_exists(dirname(__FILE__, 3) . '/languages/plugins/pt-ocdi-es_CL.po') or
 		!file_exists(dirname(__FILE__, 3) . '/languages/plugins/pt-ocdi-es_CO.mo') or
 		!file_exists(dirname(__FILE__, 3) . '/languages/plugins/pt-ocdi-es_CO.po') or
@@ -962,8 +960,20 @@ function dos_lineas_scripts() {
 	    wp_add_inline_style( 'line-main-styles', $custom_css );
     // }
 
-	wp_enqueue_style('line-google-fonts', '//fonts.googleapis.com/css?family=Alegreya+Sans:400,700|Alegreya:400,700|Asap+Condensed:400,700|Asap:400,700|Gentium+Basic:400,700|Lato:400,700|Merriweather+Sans:400,700|Merriweather:400,700|Montserrat+Alternates:400,700|Montserrat+Subrayada:400,700|Montserrat:400,700|Open+Sans+Condensed:300,700|Open+Sans:400,700|Raleway:400,700|Roboto+Condensed:400,700|Roboto+Mono:400,700|Roboto+Slab:400,700|Roboto:400,700|Source+Sans+Pro:400,700|Zilla+Slab:400,700&display=swap');
+	$main_font = get_theme_mod( 'main_font', '' );
+	$main_font = !empty($main_font) ? $main_font : 'Raleway';
+	$segundary_font = get_theme_mod( 'segundary_font', '' );
+	$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
 
+	$url_main_font = urlencode($main_font);
+	$url_segundary_font = urlencode($segundary_font);
+
+
+	if($segundary_font === $main_font){
+		wp_enqueue_style('line-google-fonts', "//fonts.googleapis.com/css?family=$url_main_font:400,700&display=swap");
+	}else{
+		wp_enqueue_style('line-google-fonts', "//fonts.googleapis.com/css?family=$url_main_font:400,700|$segundary_font:400,700&display=swap");
+	}
 	wp_enqueue_style( 'bootstrap_css', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
   					array(), 
