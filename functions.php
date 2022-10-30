@@ -1014,31 +1014,31 @@ add_action( 'wp_enqueue_scripts', 'dos_lineas_scripts' );
 
 
 function dos_lineas_scripts_remove() {
-    global $wp_scripts, $is_change_regenerator_runtime;
+    global $wp_scripts, $change_regenerator_runtime;
 
-	$is_change_regenerator_runtime = false;
+	$change_regenerator_runtime['is_change'] = false;
 
 	write_log('$wp_scripts->queue');
 	write_log($wp_scripts->queue);
 
-	if(in_array('regenerator-runtime', $wp_scripts->queue)){
+	if(!empty($wp_scripts->registered['regenerator-runtime'])){
 		wp_dequeue_script( 'regenerator-runtime' );
 
-		$is_change_regenerator_runtime = true;
+		$is_change_regenerator_runtime['is_change']  = true;
 	}
 
 }
 add_action( 'wp_print_scripts', 'dos_lineas_scripts_remove', 99999 );
 
 function dos_lineas_style_in_footer() {
-    global $wp_scripts, $is_change_regenerator_runtime;
+    global $wp_scripts, $change_regenerator_runtime;
 
 	wp_enqueue_style( 'bootstrap_css', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
   					array(), 
   					'4.4.1'); 
 
-	if($is_change_regenerator_runtime){
+	if($change_regenerator_runtime['is_change']){
 		echo '"<script type="text/javascript" async src="' . get_site_url() . '/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver="' . $wp_scripts->registered['regenerator-runtime']->ver . ' id="regenerator-runtime-js"></script>"';
 
 	}
