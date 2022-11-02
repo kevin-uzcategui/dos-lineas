@@ -983,16 +983,6 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 function dos_lineas_scripts() {
 
-	wp_enqueue_style('line-main-styles', get_stylesheet_uri(), array('line-google-fonts', 'bootstrap_css', 'fontawesome_css'));
-
-	// if(function_exists( 'theme_get_customizer_css' )){
-		$custom_css = theme_get_customizer_css();
-	    wp_add_inline_style( 'line-main-styles', $custom_css );
-    // }
-
-	wp_enqueue_style( 'fontawesome_css', 
-  					get_site_url() . '/wp-content/themes/dos-lineas/file-sontawesome/css/all.css'); 
-
 	wp_enqueue_script( 'bootstrap_js', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', 
   					array('jquery'), 
@@ -1013,38 +1003,20 @@ function dos_lineas_scripts() {
 add_action( 'wp_enqueue_scripts', 'dos_lineas_scripts' );
 
 
-function dos_lineas_scripts_remove() {
-    global $wp_scripts, $change_regenerator_runtime;
-
-	$change_regenerator_runtime['is_change'] = false;
-
-	write_log('$wp_scripts->queue');
-	write_log($wp_scripts->queue);
-
-	if(!empty($wp_scripts->registered['regenerator-runtime'])){
-
-		$change_regenerator_runtime['version']  = $wp_scripts->registered['regenerator-runtime']->ver;
-
-		unset($wp_scripts->registered['regenerator-runtime']);
-
-		$change_regenerator_runtime['is_change']  = true;
-	}
-
-}
-add_action( 'wp_print_scripts', 'dos_lineas_scripts_remove', 99999 );
-
 function dos_lineas_style_in_footer() {
     global $change_regenerator_runtime;
+
+	wp_enqueue_style('line-main-styles', get_stylesheet_uri(), array('line-google-fonts', 'bootstrap_css', 'fontawesome_css'));
+
+	$custom_css = theme_get_customizer_css();
+	wp_add_inline_style( 'line-main-styles', $custom_css );
 
 	wp_enqueue_style( 'bootstrap_css', 
   					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
   					array(), 
   					'4.4.1'); 
 
-	if($change_regenerator_runtime['is_change']){
-		echo '"<script type="text/javascript" async src="' . get_site_url() . '/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver="' . $change_regenerator_runtime['version'] . ' id="regenerator-runtime-js"></script>"';
-
-	}
+	wp_enqueue_style( 'fontawesome_css', get_site_url() . '/wp-content/themes/dos-lineas/file-sontawesome/css/all.css'); 
 						
 }
 add_action( 'wp_footer', 'dos_lineas_style_in_footer' );

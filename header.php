@@ -38,6 +38,16 @@
 
 </head>
 
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+<?php
+$page_load_style = get_theme_mod( 'page_load_style', true );
+
+if($page_load_style):
+?>
+
+
 <style type="text/css">
 
 	body{
@@ -46,12 +56,7 @@
 
 	}
 
-
-
 </style>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
 
 <div class="containerbol">
 
@@ -73,33 +78,31 @@
 
 <script type="text/javascript">
 
+	document.addEventListener("DOMContentLoaded", function(event) {
 
+		jQuery(".containerbol")
 
-document.addEventListener("DOMContentLoaded", function(event) {
+				.animate({
 
-	jQuery(".containerbol")
+					opacity: "0.1"
 
-			.animate({
+				}, 800, function() {
 
-          		opacity: "0.1"
+					jQuery(".containerbol").css("display", "none");
 
-         	}, 800, function() {
+				});
 
-				jQuery(".containerbol").css("display", "none");
+				
 
-			});
+		jQuery("body").css("overflow", "visible");
 
-			
-
-	jQuery("body").css("overflow", "visible");
-
-});
-
-
-
-
+	});
 
 </script>
+
+<?php
+endif;
+?>
 
 <div id="page" class="site">
 

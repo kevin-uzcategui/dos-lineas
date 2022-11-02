@@ -69,12 +69,22 @@
 
 </div>
 
+<?php
+$page_load_style = get_theme_mod( 'page_load_style', true );
+
+if($page_load_style):
+?>
+
 <style type="text/css">
 	body{
 		overflow-y: visible;	
 	}
 
 </style>
+
+<?php
+endif;
+?>
 
 <?php wp_footer(); ?>
 

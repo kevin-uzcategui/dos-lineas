@@ -142,7 +142,37 @@ function dos_lineas_customize_register( $wp_customize ) {
 	    'priority'   => 10, //Determines the order this control appears in for the specified section
 	    'section'    => 'header_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
 	    'type'    => 'checkbox',
-        'std'        => '1'	    
+        'std'        => '1',  
+	)
+	) );
+
+	// Customize Other
+
+	$wp_customize->add_section( 'other_section', array(
+	    'title'       => _x( 'Other', 'title of a custom section', 'dos-lineas' ), //Visible title of section
+  	    'priority'    => 40, //Determines widget-headert order this appears in
+		'capability'  => 'edit_theme_options',
+	) 
+	);
+
+	$wp_customize->add_setting( 'page_load_style',
+	 array(
+	    'transport' => 'refresh',
+	    'capability'  => 'edit_theme_options',
+		'default'    => true	
+	 ) 
+	);
+
+	$wp_customize->add_control( new WP_Customize_Control(
+	 $wp_customize, //Pass the $wp_customize object (required)
+	 'page_load_style', //Set a unique ID for the control
+	 array(
+	    'label'      => __( 'Page Load Style', 'dos-lineas' ), //Admin-visible name of the control
+	    'settings'   => 'page_load_style', //Which setting to load and manipulate (serialized is okay)
+	    'priority'   => 10, //Determines the order this control appears in for the specified section
+	    'section'    => 'other_section', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+	    'type'    => 'checkbox',
+        'std'        => '1',
 	)
 	) );
 
