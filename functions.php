@@ -99,43 +99,6 @@ if ( ! function_exists( 'dos_lineas_setup' ) ) :
 		function theme_get_customizer_css() {
 			ob_start();
 
-			$main_font = get_theme_mod( 'main_font', '' );
-			$main_font = !empty($main_font) ? $main_font : 'Raleway';	
-			$archive_main_font = str_replace(' ', '', $main_font);
-			$css_main_font = "\"$main_font\", sans-serif";
-
-			$segundary_font = get_theme_mod( 'segundary_font', '' );
-			$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
-			$archive_segundary_font = str_replace(' ', '', $segundary_font);
-			$css_segundary_font = "\"$segundary_font\", sans-serif";
-
-			if($segundary_font === $main_font):
-
-			?>
-			@font-face {
-				font-family: <?php echo $main_font ?>;
-				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf'), 
-				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf');
-			}
-			<?php
-			
-			else:
-
-			?>
-			@font-face {
-				font-family: <?php echo $main_font ?>;
-				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf') format('truetype'), 
-				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf') format('truetype');
-			}
-			
-			@font-face {
-				font-family: <?php echo $segundary_font ?>;
-				src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Regular.ttf') format('truetype'), 
-				url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Bold.ttf') format('truetype');
-			}			
-			<?php
-
-			endif;
 			?>
 
 
@@ -1005,6 +968,56 @@ add_action( 'wp_enqueue_scripts', 'dos_lineas_scripts' );
 
 function dos_lineas_style_in_footer() {
     global $change_regenerator_runtime;
+
+
+
+
+
+
+
+	$main_font = get_theme_mod( 'main_font', '' );
+	$main_font = !empty($main_font) ? $main_font : 'Raleway';	
+	$archive_main_font = str_replace(' ', '', $main_font);
+	$css_main_font = "\"$main_font\", sans-serif";
+
+	$segundary_font = get_theme_mod( 'segundary_font', '' );
+	$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
+	$archive_segundary_font = str_replace(' ', '', $segundary_font);
+	$css_segundary_font = "\"$segundary_font\", sans-serif";
+
+	if($segundary_font === $main_font):
+
+	?>
+	@font-face {
+		font-family: <?php echo $main_font ?>;
+		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf'), 
+		url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf');
+	}
+	<?php
+	
+	else:
+
+	?>
+	@font-face {
+		font-family: <?php echo $main_font ?>;
+		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf') format('truetype'), 
+		url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: <?php echo $segundary_font ?>;
+		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Regular.ttf') format('truetype'), 
+		url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Bold.ttf') format('truetype');
+	}			
+	<?php
+
+	endif;
+
+
+
+
+
+
 
 	wp_enqueue_style('line-main-styles', get_stylesheet_uri(), array('line-google-fonts', 'bootstrap_css', 'fontawesome_css'));
 
