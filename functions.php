@@ -988,16 +988,19 @@ function dos_lineas_style_in_footer() {
 	if($segundary_font === $main_font):
 
 	?>
+	<style>
 	@font-face {
 		font-family: <?php echo $main_font ?>;
 		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf'), 
 		url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Bold.ttf');
 	}
+	</style>
 	<?php
 	
 	else:
 
 	?>
+	<style>
 	@font-face {
 		font-family: <?php echo $main_font ?>;
 		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_main_font ?>-Regular.ttf') format('truetype'), 
@@ -1008,7 +1011,8 @@ function dos_lineas_style_in_footer() {
 		font-family: <?php echo $segundary_font ?>;
 		src: url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Regular.ttf') format('truetype'), 
 		url('<?php echo get_template_directory_uri() ?>/fonts/<?php echo $archive_segundary_font ?>-Bold.ttf') format('truetype');
-	}			
+	}
+	</style>	
 	<?php
 
 	endif;
