@@ -21,11 +21,7 @@ $classes_single_posts = array(
 
 );
 
-
-
 ?>
-
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($classes_single_posts); ?>>
 

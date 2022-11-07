@@ -99,6 +99,14 @@ if ( ! function_exists( 'dos_lineas_setup' ) ) :
 		function theme_get_customizer_css() {
 			ob_start();
 
+        	$main_font = get_theme_mod( 'main_font', '' );
+        	$main_font = !empty($main_font) ? $main_font : 'Raleway';	
+        	$css_main_font = "\"$main_font\", sans-serif";
+        
+        	$segundary_font = get_theme_mod( 'segundary_font', '' );
+        	$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
+        	$css_segundary_font = "\"$segundary_font\", sans-serif";
+
 			?>
 
 
@@ -915,12 +923,12 @@ function one_click_demo_custom_translate_text( $traduccion ) {
 	        'When you import the data, the following things might happen:' => 'Al importar los datos, pueden ocurrir las siguientes cosas:',
 	        'if you want to import the WooCommerce test data, you must have it done the plug-in before exporting the Demo.' => 'Si desea importar los datos de prueba de WooCommerce, debe hacer que se complete el complemento antes de exportar la demostraciÃ³n.',
 	        'Avance' => 'Avanzado',
-	        'Photography' => 'FotografÃ­a',
+	        'Photography' => 'Fotograf¨ªa',
 			'Jewelry' => 'Joyas',
 			'Restaurant' => 'Restaurante',
 			'Clothing' => 'Ropa',
 			'Service' => 'Servicios',
-			'Technological' => 'TecnolÃ³gico',
+			'Technological' => 'Tecnol¨®gico',
 	    );
 	    $traduccion = str_ireplace(array_keys($palabras), $palabras, $traduccion);
 	    return $traduccion; 
@@ -946,48 +954,26 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 function dos_lineas_scripts() {
 
-	wp_enqueue_script( 'bootstrap_js', 
-  					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', 
-  					array('jquery'), 
-  					'4.4.1', 
-  					true); 
+    /* CSS */
+	wp_enqueue_style( 'fontawesome_css', get_site_url() . '/wp-content/themes/dos-lineas/file-sontawesome/css/all.css'); 
 
-	wp_enqueue_script( 'dos-lineas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151217', true );
+	wp_enqueue_style('line-main-styles', get_stylesheet_uri());
 
-	wp_enqueue_script( 'dos-lineas-general', get_template_directory_uri() . '/js/general.js', array('jquery'), '20151215', true );
-
-	wp_enqueue_script( 'dos-lineas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-
-}
-add_action( 'wp_enqueue_scripts', 'dos_lineas_scripts' );
-
-
-function dos_lineas_style_in_footer() {
-    global $change_regenerator_runtime;
-
-
-
-
-
-
-
+	$custom_css = theme_get_customizer_css();
+	wp_add_inline_style( 'line-main-styles', $custom_css );
+	
 	$main_font = get_theme_mod( 'main_font', '' );
 	$main_font = !empty($main_font) ? $main_font : 'Raleway';	
 	$archive_main_font = str_replace(' ', '', $main_font);
-	$css_main_font = "\"$main_font\", sans-serif";
 
 	$segundary_font = get_theme_mod( 'segundary_font', '' );
 	$segundary_font = !empty($segundary_font) ? $segundary_font : 'Zilla Slab';
 	$archive_segundary_font = str_replace(' ', '', $segundary_font);
-	$css_segundary_font = "\"$segundary_font\", sans-serif";
 
 	if($segundary_font === $main_font):
 
 	?>
+	
 	<style>
 	@font-face {
 		font-family: <?php echo $main_font ?>;
@@ -1000,6 +986,7 @@ function dos_lineas_style_in_footer() {
 	else:
 
 	?>
+	
 	<style>
 	@font-face {
 		font-family: <?php echo $main_font ?>;
@@ -1015,25 +1002,47 @@ function dos_lineas_style_in_footer() {
 	</style>	
 	<?php
 
-	endif;
+	endif;	
+	    
+	
+	/*JavaScript*/
+
+	wp_enqueue_script( 'dos-lineas-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151217', true );
+
+	wp_enqueue_script( 'dos-lineas-general', get_template_directory_uri() . '/js/general.js', array('jquery'), '20151215' );
+
+}
+add_action( 'wp_enqueue_scripts', 'dos_lineas_scripts' );
+
+
+
+
+add_action( 'wp_footer', 'add_enqueue_footer' );
+function add_enqueue_footer(){
+
+    wp_enqueue_style( 'bootstrap_css', 
+  		'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
+  		array(), 
+  		'4.4.1',
+  		'all'
+  	); 
+
+	wp_print_script_tag(
+		array(
+			'id' => 'bootstrap_js',
+			'src' => esc_url( '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' ),
+			'defer' => ''
+		)
+	);
+    
+}
 
 
 
 
 
+function dos_lineas_style_in_footer() {
 
-
-	wp_enqueue_style('line-main-styles', get_stylesheet_uri(), array('line-google-fonts', 'bootstrap_css', 'fontawesome_css'));
-
-	$custom_css = theme_get_customizer_css();
-	wp_add_inline_style( 'line-main-styles', $custom_css );
-
-	wp_enqueue_style( 'bootstrap_css', 
-  					'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
-  					array(), 
-  					'4.4.1'); 
-
-	wp_enqueue_style( 'fontawesome_css', get_site_url() . '/wp-content/themes/dos-lineas/file-sontawesome/css/all.css'); 
 						
 }
 add_action( 'wp_footer', 'dos_lineas_style_in_footer' );
